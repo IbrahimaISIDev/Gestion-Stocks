@@ -2,19 +2,18 @@
   "version": 2,
   "builds": [
     {
-      "src": "server/node-build.ts",
+      "src": "dist/server/node-build.mjs",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "server/node-build.ts"
+      "dest": "/dist/server/node-build.mjs"
     },
     {
       "src": "/(.*)",
-      "dest": "server/node-build.ts"
+      "dest": "/dist/server/node-build.mjs"
     }
-  ],
-  "outputDirectory": "dist/spa"
+  ]
 }
