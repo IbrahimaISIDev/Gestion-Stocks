@@ -5,9 +5,10 @@ package-lock.json
 yarn.lock
 
 # Build outputs
-dist/
 build/
 *.tsbuildinfo
+# Keep dist/ for Vercel deployment
+# dist/
 
 # Environment variables
 .env
